@@ -9,8 +9,12 @@
 <body>
   <%- include('./partials/navbar.ejs') %>
   <h1>Intro to Authentication</h1>
+ 
+<% if (user) { %>
   <h4>Hello, <%= user.email %>!</h4>
-  <%- body %> 
+<% } %>
+
+<%- body %> 
   
 </body>
 </html>
